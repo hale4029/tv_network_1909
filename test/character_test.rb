@@ -5,7 +5,6 @@ require 'minitest/pride'
 class CharacterTest < Minitest::Test
 
   def setup
-    #hash = {name: "KITT", actor: "William Daniels", salary: 1_000_000}
     @character = Character.new({name: "KITT", actor: "William Daniels", salary: 1_000_000})
   end
 
