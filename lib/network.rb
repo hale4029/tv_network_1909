@@ -20,5 +20,10 @@ class Network
     highest_paid.last.actor
   end
 
-
+  def payroll
+    characters = @shows.map { |show| show.characters }.flatten
+    hash = {}
+    characters.each { |character| hash[character.actor] = character.salary }
+    hash
+  end
 end
